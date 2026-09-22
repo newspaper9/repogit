@@ -15,7 +15,7 @@ body {
 img {
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .tomaaw {
@@ -154,9 +154,22 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   text-align: center;
   color: #ffffff;
   padding: 0 40px;
+}
+
+.hero-gradient {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-badge {
@@ -209,6 +222,8 @@ img {
 .wonders-section {
   max-width: 1200px;
   margin: 60px auto;
+  display: flex;
+  justify-content: space-between;
   padding: 0 20px;
 }
 
@@ -241,7 +256,7 @@ img {
 
 .wonder-left {
   display: flex;
-  gap: 8px``;
+  gap: 8px;
 }
 
 .wonders-grid {
@@ -255,9 +270,8 @@ img {
   background-color: #1a3d46;
   border-radius: 20px;
   color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
 }
 
 .card-content {
@@ -278,12 +292,12 @@ img {
 
 .horgiintogoo {
   width: 480px;
-  height: 480px;
+  height: 380px;
 }
 
 .Amarbayasgalant {
-  height: 420px;
-  width: 480px;
+  height: 380px;
+  width: 680px;
 }
 
 .targ {
@@ -347,4 +361,219 @@ img {
   color: #2b697a;
   font-weight: 500;
   padding: 12px 16px;
+}
+
+.ayalal-dock {
+  width: 1200px;
+  margin: -40px auto 60px auto;
+  position: relative;
+  z-index: 10;
+}
+
+.ayalal-dock__khuudas {
+  background-color: #ffffff;
+  border-radius: 9999px;
+  padding: 10px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 13.88px;
+  margin-top: 48px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.ayalal-dock__uils {
+  display: flex;
+  align-items: center;
+  width: 274.88px;
+  gap: 14px;
+}
+
+.ayalal-dock__durs {
+  width: 40px;
+  height: 40px;
+  background-color: #f0f7f9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1a4f5c;
+  font-size: 16px;
+}
+
+.ayalal-dock__tailbar {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ayalal-dock__jijig-ner {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+.ayalal-dock__utga {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.ayalal-dock__zuraas {
+  width: 1px;
+  height: 38px;
+  background-color: #e2e8f0;
+}
+
+.ayalal-dock__tovchluur-tsogts {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tovch {
+  border: none;
+  outline: none;
+  border-radius: 9999px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.tovch--gol {
+  background-color: #2b697a;
+  color: #ffffff;
+}
+
+.tovch--gol {
+  background-color: #1a4f5c;
+}
+
+hero.text {
+  padding-bottom: 24px;
+}
+
+.tovch--khuree {
+  background-color: #d9eff7;
+  padding: 14px 24px;
+}
+
+.cards {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+}
+
+.ayalal-khotolbor {
+  width: 1280px;
+
+  margin: 80px auto;
+}
+
+.ayalal-khotolbor-days {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 26px;
+}
+
+.ayalal-khotolbor__header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.ayalal-khotolbor__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #d9eff7;
+  color: #065161;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 1px;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  margin-bottom: 12px;
+}
+
+.ayalal-khotolbor__header h2 {
+  font-size: 36px;
+  color: #0f172a;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.ayalal-khotolbor__tailbar {
+  font-size: 15px;
+  color: #64748b;
+  max-width: 620px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.ayalal-khotolbor__grid {
+  gap: 24px;
+}
+
+.khotolbor-kart {
+  background-color: #e6eff5;
+  border: 1px solid #f1f5f9;
+  border-radius: 12px;
+  height: 243px;
+  width: 379px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.khotolbor-kart__baruun-zurag {
+  width: 243px;
+  height: 379px;
+}
+
+.khotolbor-kart__tolgoi-shoshgo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.odor-badge {
+  background-color: #e6eff5;
+  color: #70787c;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.odor-badge--toppy {
+  background-color: #2b697a;
+  color: #ffffff;
+}
+
+.bairshil-ner {
+  font-size: 12px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.khotolbor-kart--tom {
+  width: 781px;
+  height: 245px;
 }
