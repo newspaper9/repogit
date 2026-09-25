@@ -225,7 +225,7 @@ img {
 }
 
 .wonders-section {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 60px auto;
   display: flex;
   justify-content: space-between;
@@ -374,7 +374,7 @@ img {
 }
 
 .ayalal-dock {
-  width: 1200px;
+  width: 1280px;
   margin: -40px auto 60px auto;
   position: relative;
   z-index: 10;
@@ -664,7 +664,7 @@ hero.text {
 }
 
 .unetiin-khesseg {
-  width: 1200px;
+  width: 1280px;
   margin: 80px auto;
 }
 
@@ -890,8 +890,8 @@ hero.text {
 .amlan-khesseg {
   background-color: #ffffff;
   border-radius: 24px;
-  width: 1200px;
-  margin: 60px auto;
+  width: 1280px;
+  padding: 48px 72px;
   padding: 56px 48px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
 }
@@ -924,6 +924,19 @@ hero.text {
   margin-bottom: 16px;
 }
 
+.khul-badge {
+  background-color: white;
+  border-radius: 999px;
+  text-wrap: nowrap;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.khul-badge-2 {
+}
+
 .amlan-zuun p {
   font-size: 14px;
   color: #64748b;
@@ -935,6 +948,7 @@ hero.text {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  background-color: white;
 }
 
 .amlan-badge {
@@ -1009,13 +1023,15 @@ hero.text {
 }
 
 .cta-khesseg {
-  width: 1200px;
-  margin: 0 auto 80px auto;
+  width: 1280px;
+  padding: 72px 48px;
+  background-color: #f3faff;
 }
 
 .cta-sagts {
   background-color: #194553;
   border-radius: 24px;
+
   padding: 56px 64px;
   display: flex;
   justify-content: space-between;
@@ -1081,7 +1097,7 @@ hero.text {
 }
 
 .khul-sagts {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
@@ -1238,7 +1254,7 @@ hero.text {
 }
 
 .khul-dood-sags {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
@@ -1274,5 +1290,6 @@ hero.text {
   color: #141d21;
 }
 
-.comp {
+.fa-leaf1 {
+  padding: 5px;
 }
