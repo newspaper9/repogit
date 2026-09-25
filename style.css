@@ -23,6 +23,10 @@ img {
   justify-content: space-between;
   height: 80px;
   align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 1280px;
   padding: 0 32px;
   background-color: #ffffff;
 }
@@ -158,6 +162,7 @@ img {
   text-align: center;
   color: #ffffff;
   padding: 0 40px;
+  margin-top: 73px;
 }
 
 .hero-gradient {
@@ -274,6 +279,11 @@ img {
   overflow: hidden;
 }
 
+.wonder-card-gradient {
+  position: absolute;
+  inset: 0;
+}
+
 .card-content {
   position: absolute;
   bottom: 10px;
@@ -327,7 +337,7 @@ img {
   width: 616.67px;
   height: 38px;
   color: #ffffff;
-  line-height: 38px;
+  line-height: 20px;
   margin-bottom: 12px;
   vertical-align: middle;
 }
@@ -467,6 +477,7 @@ hero.text {
 
 .cards {
   display: flex;
+  justify-content: center;
   gap: 24px;
   flex-wrap: wrap;
 }
@@ -479,7 +490,6 @@ hero.text {
 
 .ayalal-khotolbor {
   width: 1280px;
-
   margin: 80px auto;
 }
 
@@ -487,11 +497,20 @@ hero.text {
   display: flex;
   flex-wrap: wrap;
   gap: 24px 26px;
+  justify-content: center;
 }
 
 .ayalal-khotolbor__header {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  height: 168px;
+
+  padding-bottom: 24px;
+  gap: 8px;
+
   text-align: center;
-  margin-bottom: 48px;
 }
 
 .ayalal-khotolbor__badge {
@@ -508,16 +527,21 @@ hero.text {
   margin-bottom: 12px;
 }
 
-.ayalal-khotolbor__header h2 {
-  font-size: 36px;
-  color: #0f172a;
-  font-weight: 800;
-  margin-bottom: 10px;
+.medeelel {
+  color: #40484b;
 }
-
+.garchig {
+  color: #141d21;
+}
+.fa-truck-monster {
+  color: #065161;
+}
+.khotolbor-kart__shoshgo-tsogts {
+  color: #70787c;
+}
 .ayalal-khotolbor__tailbar {
   font-size: 15px;
-  color: #64748b;
+  color: #40484b;
   max-width: 620px;
   margin: 0 auto;
   line-height: 1.5;
@@ -531,6 +555,7 @@ hero.text {
   background-color: #e6eff5;
   border: 1px solid #f1f5f9;
   border-radius: 12px;
+
   height: 243px;
   width: 379px;
   padding: 24px;
@@ -540,8 +565,10 @@ hero.text {
 }
 
 .khotolbor-kart__baruun-zurag {
-  width: 243px;
-  height: 379px;
+  width: 224px;
+  height: 176px;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .khotolbor-kart__tolgoi-shoshgo {
@@ -569,11 +596,683 @@ hero.text {
 
 .bairshil-ner {
   font-size: 12px;
-  color: #94a3b8;
+  color: #70787c;
   font-weight: 500;
 }
 
 .khotolbor-kart--tom {
   width: 781px;
   height: 245px;
+}
+
+.wonder-card {
+  position: relative;
+  height: 380px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.chonon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.wonder-card .chonon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background-image: url(Gradient\ Scrim\ for\ Contrast\ &\ Depth.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.label-gomdol {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.label-glass {
+  background-color: #ffffffc7;
+  color: #141d21;
+}
+
+.label-blue {
+  background-color: #d9eff7;
+  color: #194553;
+}
+
+.khotolbor-kart_khotolbor-kart--tom {
+  width: 781px;
+  height: 245px;
+  padding: 24px;
+  display: flex;
+  background-color: #e6eff5;
+  border: 1px solid #f1f5f9;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tom-baruun-medeelel {
+  width: 509px;
+}
+
+.unetiin-khesseg {
+  width: 1200px;
+  margin: 80px auto;
+}
+
+.unetiin-tolgoi {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.unetiin-shoshgo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #d9eff7;
+  color: #2b697a;
+  font-size: 11px;
+  letter-spacing: 1px;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  margin-bottom: 12px;
+}
+
+.unetiin-tolgoi h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.unetiin-tolgoi p {
+  color: #11315e;
+  font-size: 15px;
+  max-width: 580px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.unetiin-kartuud {
+  display: flex;
+  padding: 32px;
+  width: 1184px;
+  height: 573px;
+  gap: 30px;
+}
+
+.unetiin-kart {
+  background-color: #ffffff;
+  height: 573px;
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.unetiin-kart--ontslog {
+  background-color: #fafafa;
+  color: #065161;
+  border-color: #1a4f5c;
+  box-shadow: 0 20px 40px rgba(26, 79, 92, 0.25);
+  padding-top: 80px;
+}
+
+.ontslog-shoshgo {
+  position: absolute;
+  padding: 4px 7px;
+  top: -15px;
+  left: 50%;
+
+  height: 40px;
+  transform: translateX(-50%);
+  background-color: #d97706;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  letter-spacing: 1px;
+}
+
+.bagtsiin-ner {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  background-color: #d9eff7;
+  padding: 4px 16px;
+  border-radius: 99px;
+  color: #065161;
+}
+
+.unetiin-kart--ontslog {
+  position: relative;
+}
+
+.unetiin-kart--ontslog .bagtsiin-ner {
+  color: #065161;
+}
+
+.bagtsiin-une {
+  font-size: 36px;
+  font-weight: 900;
+  color: #0f172a;
+  margin: 12px 8px;
+  pad: 48px;
+}
+
+.unetiin-kart--ontslog .bagtsiin-une {
+  color: #065161;
+}
+
+.bagtsiin-une span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #70787c;
+}
+
+.unetiin-kart--ontslog .bagtsiin-une span {
+  color: #065161;
+}
+
+.bagtsiin-tailbar {
+  font-size: 13px;
+  color: #065161;
+
+  line-height: 20px;
+  font-weight: 700;
+  font-style: bold;
+}
+
+.unetiin-kart--ontslog .bagtsiin-tailbar {
+  color: #065161;
+}
+
+.bagtsiin-jagsaalt {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 32px;
+}
+
+.bagtsiin-uilschilgee {
+  font-size: 14px;
+  color: #065161;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bagtsiin-uilschilgee1 {
+  color: #141d21;
+}
+.unetiin-kart--ontslog .bagtsiin-uilschilgee {
+  color: #065161;
+}
+
+.bagtsiin-uilschilgee i {
+  color: #065161;
+}
+
+.unetiin-kart--ontslog .bagtsiin-uilschilgee i {
+  color: #065161;
+}
+
+.unetiin-tovch {
+  width: 100%;
+  padding: 14px;
+  border-radius: 9999px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.unetiin-tovch--kuree {
+  background-color: transparent;
+  border: 2px solid #bad4db;
+  color: #b4cad0;
+}
+
+.unetiin-tovch--undsen {
+  background-color: #ffffff;
+  color: #065161;
+}
+
+.fa-check {
+  color: #446744;
+}
+
+.unetiin-kart--vip {
+  background-color: #f8fafc;
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.unetiin-kart--vip .bagtsiin-ner {
+  color: #0f172a;
+}
+
+.unetiin-kart--vip .bagtsiin-une {
+  color: #0f172a;
+}
+
+.unetiin-kart--vip .bagtsiin-une span {
+  color: #64748b;
+}
+
+.unetiin-kart--vip .bagtsiin-tailbar {
+  color: #64748b;
+}
+
+.unetiin-kart--vip .bagtsiin-uilschilgee {
+  color: #1e293b;
+}
+
+.unetiin-kart--vip .bagtsiin-uilschilgee i {
+  color: #0284c7;
+}
+
+.unetiin-tovch--vip {
+  background-color: #0f172a;
+  color: #ffffff;
+  border: none;
+}
+
+.unetiin-tovch--vip:hover {
+  background-color: #1e293b;
+}
+
+.amlan-khesseg {
+  background-color: #ffffff;
+  border-radius: 24px;
+  width: 1200px;
+  margin: 60px auto;
+  padding: 56px 48px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.amlan-sagts {
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.amlan-zuun {
+  width: 420px;
+}
+
+.amlan-shoshgo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #065161;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.amlan-zuun h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 16px;
+}
+
+.amlan-zuun p {
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.amlan-badge-tsogts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.amlan-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #e6eff5;
+  color: #334155;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 9999px;
+  width: fit-content;
+}
+
+.amlan-baruun {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  flex: 1;
+}
+
+.amlan-kart {
+  background-color: #f0f7fa;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.amlan-kart__durs {
+  color: #1a4f5c;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.amlan-kart h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.amlan-kart p {
+  font-size: 12px;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.amlan-kart__durs {
+  color: #065161;
+}
+.sampar-холбоос {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.holboos-tovch {
+  background-color: #e2e8f0;
+  color: #334155;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  transition: background-color 0.2s;
+}
+
+.holboos-tovch:hover {
+  background-color: #cbd5e1;
+}
+
+.cta-khesseg {
+  width: 1200px;
+  margin: 0 auto 80px auto;
+}
+
+.cta-sagts {
+  background-color: #194553;
+  border-radius: 24px;
+  padding: 56px 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  padding: 72px;
+}
+
+.cta-zuun {
+  max-width: 580px;
+}
+
+.cta-jijig-ner {
+  font-size: 11px;
+
+  letter-spacing: 1.5px;
+  color: #d9eff7;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.cta-zuun h2 {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.cta-zuun p {
+  font-size: 14px;
+  color: #94a3b8;
+  line-height: 1.6;
+}
+
+.cta-baruun {
+  display: flex;
+  gap: 16px;
+}
+
+.tovch--cta-primary {
+  background-color: #2b697a;
+  color: #ffffff;
+  padding: 14px 28px;
+  border-radius: 9999px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+.tovch--cta-secondary {
+  background-color: #e2e8f0;
+  color: #0f172a;
+  padding: 14px 28px;
+  border-radius: 9999px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+.site-n-khul {
+  background-color: #ecf5fa;
+  padding: 60px 0 20px 0;
+}
+
+.khul-sagts {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.khul-bagana {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.khul-bagana--logo {
+  flex: 1.5;
+}
+
+.khul-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #065161;
+}
+
+.khul-logo i {
+  font-size: 24px;
+  color: #065161;
+}
+
+.logo-ner {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logo-ded {
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #94a3b8;
+}
+
+.khul-bagana h3 {
+  color: #141d21;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.khul-bagana ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.khul-bagana ul li a {
+  color: #40484b;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.khul-bagana ul li a:hover {
+  color: #ffffff;
+}
+
+.khul-bagana--subscribe {
+  flex: 1.5;
+}
+
+.subscribe-heseg {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.subscribe-orolt {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  padding: 8px 12px;
+  flex: 1;
+}
+
+.subscribe-orolt i {
+  color: #64748b;
+  margin-right: 8px;
+}
+
+.subscribe-orolt input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  width: 100%;
+}
+
+.subscribe-tovch {
+  background-color: #2b697a;
+  color: #ffffff;
+  border: none;
+  border-radius: 9999px;
+  size: 14px;
+  font-style: semi-bold;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.subscribe-tovch:hover {
+  background-color: #161a18;
+}
+
+.social-snet {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.social-snet a {
+  color: #94a3b8;
+  font-size: 18px;
+}
+
+.social-snet a:hover {
+  color: #ffffff;
+}
+.social-khesseg {
+  color: #70787c;
+}
+
+.fa-globe {
+  color: #065161;
+}
+
+.fa-camera {
+  color: #065161;
+}
+
+.fa-message {
+  color: #065161;
+}
+.khul-dood-khesseg {
+  border-top: 1px solid #334155;
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+.khul-dood-sags {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.khul-holboos-dood {
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+}
+
+.khul-holboos-dood a {
+  color: #40484b;
+  text-decoration: none;
+}
+
+.khul-holboos-dood a:hover {
+  color: #cbd5e1;
+}
+.khul-tailbar {
+  color: #40484b;
+  padding: 25px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.exped {
+  color: #141d21;
+}
+
+.comp {
 }
